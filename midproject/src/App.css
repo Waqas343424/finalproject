@@ -1,10 +1,122 @@
-.App {
+.myform {
+  background-size: cover;
+  background-image: url(https://wallpapers.com/images/featured-full/information-technology-nucb4z97b3q78mjk.jpg);
   text-align: center;
+  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
 }
 
+form {
+  display: flex;
+  flex-direction: row;
+}
+input[type="date" i] {
+
+  font-size: 18px;
+  color: #004c86;
+  background-color: #ffffff!important;
+  border: solid 1px #004c86;
+  width: 227px;
+}
+
+button {
+  border-color: #004c86;
+  cursor: pointer;
+    font-size: 18px;
+    margin-top: 40px;
+    height: 45px;
+    width: 100px;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #004c86;
+    font-weight: 600;
+}
+button:hover {
+  border-color: #004c86;
+  cursor: pointer;
+    font-size: 18px;
+    margin-top: 40px;
+    height: 45px;
+    width: 100px;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: #004c86;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+h1 {
+  color: #004c86;
+}
+input[type="text" i] {
+  font-size: 18px;
+  color: #004c86;
+  background-color: #ffffff!important;
+  border: solid 1px #004c86;
+  width: 367px;
+}
+h2 {
+  width: 270px;
+  text-align: -webkit-left;
+  font-size: 25px;
+  font-weight: 500;
+  color: #860000;
+}
+.copy {
+  cursor: pointer;
+  border: none;
+padding: 0px;
+background: none;
+color: #860000;
+}
+.shortern {
+  padding-top: 30px;
+  width: 400px;
+  border-bottom: solid 2px #860000;
+}
+
+.last {
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+}
+input {
+ 
+  background-color: #ffffff!important;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: navajowhite;
+}
+.box {
+  padding: 100px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  opacity: .7;
+}
+input {
+  background-color: #ffffff!important;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  font-size: 22px;
+  font-family: system-ui;
+  font-weight: 700;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,20 +125,26 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
 }
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
