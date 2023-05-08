@@ -36,9 +36,10 @@ const Home = () => {
   }, [data]);
 
   return (
-    <>
+    <div className='app'>
         <Form action='post'>
-        <h2 className="display-6">URL Shorten</h2>
+        <h2 className="display-6">URL Minimization</h2>
+        <div className='formmflex'>
         <FormGroup className="position-relative">
           <Label for="url">Enter URL</Label>
           <Input type='url' placeholder='Enter Valid URL' name="longUrl" value={formData.longUrl} onChange={inputChange} required/>
@@ -47,18 +48,21 @@ const Home = () => {
           <Label for="date">Expiry Date</Label>
           <Input type='date' name="expiry" value={formData.expiry} onChange={inputChange} required/>
         </FormGroup>
+        </div>
           <div className="d-grid">
       <Button variant='success' size='md' onClick={submitData}>Create Short URL</Button>
           </div>
       </Form>
       <Form>
-        <h4 className="display-6 text-center">Copy Your Short URL</h4>
+        <h4 className="display-6">Your Shortern URL Are Here:</h4>
       <FormGroup className="position-relative">
+        <div className='copy'>
         <Input type='text' name="shortUrl" value={data[data.length-1].shortUrl} disabled/>
         <Button variant='info' onClick={copyUrl}>Copy</Button>
+        </div>
       </FormGroup>
       </Form>
-    </>
+    </div>
   );
 }
 export default Home;
