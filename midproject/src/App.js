@@ -1,13 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./NavBar"
+import Home from "./Home";
+import History from './History';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-<>
-<h1>now start here</h1>
-<h2>Hello I am Waqas</h2>
-
-</>
+    <div className="Main-Div">
+      <>
+    <NavBar/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/history' element={<History/>}/>
+    </Routes>
+      </>
+    </div>
   );
 }
 
